@@ -1,0 +1,15 @@
+config:
+  target: '<< ENTER YOUR API GATEWAY ENDPOINT HERE >>'
+  phases:
+    - duration: 30
+      arrivalRate: 2
+  processor: "./loadTestFunction.js"      
+scenarios:
+  - flow:
+    - function: "generateRandomData"
+    - post:
+        url: "/"
+        json:
+          lat: "{{ lat }}"
+          lng: "{{ lng }}"
+    - log: "Sent POST request to / with {{ lat }}, {{ lng }}"
