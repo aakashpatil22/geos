@@ -95,4 +95,5 @@ const loadTable = () => {
 }
 
 // For tutorial purposes, run this first and then change to loadTable and run again.
-loadTable()
+setupTable()
+//loadTable()
