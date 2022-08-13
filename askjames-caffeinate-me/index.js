@@ -8,7 +8,7 @@ const port = process.env.PORT || 3001
 const bodyParser = require('body-parser')
 
 const AWS = require('aws-sdk')
-AWS.config.update({region: 'us-east-1'})
+AWS.config.update({region: 'ap-southeast-2'})
 
 const ddb = new AWS.DynamoDB() 
 const ddbGeo = require('dynamodb-geo')
