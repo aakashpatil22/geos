@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <h1>Caffeinate me!</h1>
-    <h2>Click to see all Starbucks within 1km (0.6 miles)</h2>
-    <p>A serverless geo-search demo - Questions? Ask James <a href="https://twitter.com/jbesw/">@jbesw</a></p>
+    <h1>Find Nearest Restaurants</h1>
+    <h2>Tap to see restaurants near you</h2>
+    <p></p>
     <GmapMap
       :center="center"
       :zoom="14"
