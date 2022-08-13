@@ -3,7 +3,7 @@
 // Boilerplate provided by https://www.npmjs.com/package/dynamodb-geo
 
 /* A hashKeyLength of 5 is ideal for searches with a 10km granuality,
-   according to the tests in the NPM documentation - jbesw
+   according to the tests in the NPM documentation -
 
    In LoadTable, you can adjust BATCH_SIZE and WAIT_BETWEEN_BATCHES_MS to 
    slow down the load if you don't want to burn through write capacity. */
